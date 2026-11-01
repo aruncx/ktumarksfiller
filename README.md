@@ -43,8 +43,6 @@ ktumarksfiller/
 ├── icon16.png          # 16x16 toolbar icon
 ├── icon48.png          # 48x48 extension management icon
 ├── icon128.png         # 128x128 Chrome Web Store / high-res icon
-├── credits.html        # Detailed developer profile page
-├── poster.jpg          # Project promotional flyer
 └── README.md           # Project documentation
 ```
 
