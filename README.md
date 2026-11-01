@@ -1,9 +1,12 @@
 # KTU Marks & Attendance Auto-Filler
 
+
+
+[](https://developer.chrome.com/docs/extensions/)
 [](https://developer.chrome.com/docs/extensions/mv3/intro/)
-[](https://chrome.google.com/)
 [](https://app.ktu.edu.in/)
-[](https://opensource.org/licenses/MIT)
+[Repository](https://www.google.com/search?q=https://github.com/aruncx/ktumarksfiller)
+[License: MIT](https://www.google.com/search?q=LICENSE)
 
 A lightweight, secure Google Chrome extension created to help faculty and teachers across colleges affiliated with **APJ Abdul Kalam Technological University (KTU)** effortlessly transfer student attendance percentages and internal/sessional marks directly from Excel spreadsheets into the official KTU e-Governance portal.
 
@@ -33,7 +36,7 @@ Entering student marks and attendance on the KTU portal requires typing two sepa
 ## 📂 Repository Structure
 
 ```text
-ktu-marks-autofill-extension/
+ktumarksfiller/
 ├── manifest.json       # Chrome Extension Manifest V3 configuration
 ├── popup.html          # Extension UI with format guide and developer card
 ├── popup.js            # Parsing engine and DOM injection logic
@@ -41,6 +44,7 @@ ktu-marks-autofill-extension/
 ├── icon48.png          # 48x48 extension management icon
 ├── icon128.png         # 128x128 Chrome Web Store / high-res icon
 ├── credits.html        # Detailed developer profile page
+├── poster.jpg          # Project promotional flyer
 └── README.md           # Project documentation
 ```
 
@@ -48,13 +52,13 @@ ktu-marks-autofill-extension/
 
 ## 🚀 Installation Guide
 
-### Option 1: Load Unpacked in Chrome / Edge / Brave
+### Load Unpacked in Chrome / Edge / Brave
 
 1. **Clone or Download** this repository to your computer:
    ```bash
-   git clone https://github.com/your-username/ktu-marks-autofill-extension.git
+   git clone https://github.com/aruncx/ktumarksfiller.git
    ```
-   *(Or click **Code** → **Download ZIP** on GitHub and extract the folder).*
+   *(Or click **Code** → **Download ZIP** from [github.com/aruncx/ktumarksfiller](https://www.google.com/search?q=https://github.com/aruncx/ktumarksfiller) and extract the folder).*
 
 2. Open your browser and navigate to the extensions page:
    * **Google Chrome**: `chrome://extensions`
@@ -65,7 +69,7 @@ ktu-marks-autofill-extension/
 
 4. In the top-left corner, click **Load unpacked**.
 
-5. Select the folder containing `manifest.json`. The extension icon will now appear in your browser toolbar. Pin it for quick access!
+5. Select the `ktumarksfiller` folder containing `manifest.json`. The extension icon will now appear in your browser toolbar. Pin it for quick access!
 
 ---
 
@@ -102,12 +106,13 @@ Select and copy your student data in Excel using the standard 4-column layout:
 
 ## 👨‍💻 Developer & Credits
 
-Designed and developed by:
+Designed and developed with care by:
 
 **Arun Xavier**  
 *Assistant Professor*  
 Department of Electrical & Electronics Engineering (EEE)  
 **Vidya Academy of Science & Technology**, Thrissur, Kerala, India  
+GitHub: [@aruncx](https://www.google.com/search?q=https://github.com/aruncx)
 
 ---
 
