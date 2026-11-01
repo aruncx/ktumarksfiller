@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 440px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 14px;
+      margin: 0;
+      font-size: 12px;
+      color: #1e293b;
+      background: #f8fafc;
+    }
+    .header {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: #fff;
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .header-logo {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      background: #fff;
+      padding: 2px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+      flex-shrink: 0;
+    }
+    .header h2 { margin: 0; font-size: 15px; font-weight: 700; }
+    .header span { font-size: 11px; opacity: 0.88; }
+
+    .warning {
+      background: #fef2f2;
+      border: 1.5px solid #ef4444;
+      border-radius: 6px;
+      padding: 8px 10px;
+      font-size: 11px;
+      color: #991b1b;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .format-guide {
+      background: #e2e8f0;
+      border-radius: 5px;
+      padding: 8px 10px;
+      margin-bottom: 8px;
+      font-size: 11px;
+      color: #334155;
+    }
+    .format-table {
+      width: 100%;
+      margin-top: 4px;
+      font-weight: 600;
+      color: #0f172a;
+      border-collapse: collapse;
+    }
+    .format-table td {
+      background: #fff;
+      border: 1px solid #cbd5e1;
+      padding: 4px 6px;
+      text-align: center;
+      font-size: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 95px;
+      box-sizing: border-box;
+      font-family: monospace;
+      font-size: 11px;
+      padding: 8px;
+      border: 1.5px solid #94a3b8;
+      border-radius: 5px;
+      background: #fff;
+      resize: vertical;
+      outline: none;
+    }
+    textarea:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 2px rgba(37,99,235,0.15);
+    }
+
+    .status-preview {
+      margin-top: 5px;
+      font-size: 11px;
+      color: #475569;
+      font-weight: 600;
+    }
+
+    .action-btn {
+      width: 100%;
+      margin-top: 10px;
+      padding: 11px;
+      background: #16a34a;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 13px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+    .action-btn:hover { background: #15803d; }
+    .action-btn:active { background: #166534; }
+
+    #msg {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      line-height: 1.4;
+      display: none;
+    }
+
+    /* Modern In-Popup Developer Card */
+    .dev-card {
+      position: relative;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(16, 42, 67, 0.05);
+      margin-top: 14px;
+    }
+    .dev-card-bar {
+      height: 4px;
+      background: linear-gradient(90deg, #0f4c81, #2563eb, #38bdf8);
+    }
+    .dev-card-body {
+      padding: 12px 14px 10px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .dev-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(145deg, #123b66, #2563eb 68%, #38bdf8);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+      flex-shrink: 0;
+      letter-spacing: 0.5px;
+    }
+    .dev-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .dev-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      color: #1d4ed8;
+      background: #eff6ff;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .dev-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #102a43;
+      line-height: 1.2;
+    }
+    .dev-role {
+      font-size: 11px;
+      color: #334155;
+      font-weight: 500;
+      margin-top: 1px;
+    }
+    .dev-inst {
+      font-size: 10px;
+      color: #64748b;
+      margin-top: 1px;
+    }
+    .dev-footer {
+      background: #f8fafc;
+      border-top: 1px solid #f1f5f9;
+      padding: 6px 14px;
+      font-size: 10px;
+      color: #64748b;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="icon48.png" alt="KTU Logo" class="header-logo">
+    <div>
+      <h2>KTU Marks Auto-Filler</h2>
+      <span>APJ Abdul Kalam Technological University</span>
+    </div>
+  </div>
+
+  <div class="warning">
+    <strong>⚠️ MANDATORY VERIFICATION & DISCLAIMER:</strong><br>
+    Please <strong>manually verify</strong> all entered marks and attendance on your screen before final submission. This extension is an assistive productivity tool; the developer accepts <strong>no responsibility or liability</strong> for any data entry errors, mismatches, or calculation discrepancies. Always double-check before saving.
+  </div>
+
+  <div class="format-guide">
+    <strong>Expected Excel Columns (Select & copy directly from Excel):</strong>
+    <table class="format-table">
+      <tr>
+        <td>1. Uni Reg No</td>
+        <td>2. Student Name</td>
+        <td>3. Attendance %</td>
+        <td>4. Internal Mark</td>
+      </tr>
+    </table>
+  </div>
+
+  <textarea id="paste" placeholder="Highlight columns in Excel, press Ctrl + C, and paste here (Ctrl + V)..."></textarea>
+  <div id="statusPreview" class="status-preview">Waiting for data paste...</div>
+
+  <button id="fillBtn" class="action-btn">⚡ Auto-Fill Portal Fields</button>
+  <div id="msg"></div>
+
+  <!-- Modern In-Popup Developer Card -->
+  <div class="dev-card">
+    <div class="dev-card-bar"></div>
+    <div class="dev-card-body">
+      <div class="dev-avatar">AX</div>
+      <div class="dev-info">
+        <div class="dev-badge">✦ DEVELOPER</div>
+        <div class="dev-name">Arun Xavier</div>
+        <div class="dev-role">Assistant Professor · Department of EEE</div>
+        <div class="dev-inst">Vidya Academy of Science &amp; Technology, Thrissur</div>
+      </div>
+    </div>
+    <div class="dev-footer">
+      Designed &amp; developed with care · A small contribution to a better digital experience
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
