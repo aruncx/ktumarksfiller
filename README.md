@@ -85,7 +85,10 @@ Uses student names as a secondary matching mechanism when a register number has 
 
 ### ✅ Automatic Portal Validation
 
-Triggers native `input`, `change` and `blur` events to update the portal's validation functions.
+Triggers native `input`, `change` and `blur` events to update the portal's validation functions:
+
+* `checkAttendance`
+* `checkEligibility`
 
 </td>
 </tr>
@@ -135,7 +138,7 @@ A straightforward workflow designed to make repetitive academic data entry easie
 ### ⬇️ DOWNLOAD KTU MARKS & ATTENDANCE AUTO-FILLER
 
 <a href="https://github.com/aruncx/ktumarksfiller/archive/refs/heads/main.zip">
-<img src="https://img.shields.io/badge/DOWNLOAD%20EXTENSION-Click%20Here-16A34A?style=for-the-badge&logo=github&logoColor=white" alt="Download Extension ZIP">
+<img src="https://img.shields.io/badge/DOWNLOAD%20EXTENSION-CLICK%20HERE-16A34A?style=for-the-badge&logo=github&logoColor=white" alt="Download Extension ZIP">
 </a>
 
 **Download the extension ZIP file directly from GitHub.**
@@ -172,7 +175,7 @@ Open the extensions management page in your browser.
 | 🌐 Microsoft Edge | `edge://extensions`   |
 | 🦁 Brave Browser  | `brave://extensions`  |
 
-You can copy the appropriate address and paste it into your browser's address bar.
+Copy the appropriate address and paste it into your browser's address bar.
 
 ---
 
@@ -182,7 +185,7 @@ You can copy the appropriate address and paste it into your browser's address ba
 
 ## STEP 4 — ENABLE DEVELOPER MODE & LOAD UNPACKED
 
-**This is the MOST IMPORTANT step. Follow these instructions carefully to install the extension successfully.**
+**This is the MOST IMPORTANT installation step. Follow these instructions carefully to install the extension successfully.**
 
 </div>
 
@@ -195,8 +198,6 @@ Once you open the browser's Extensions page:
 * Switch **Developer mode → ON**.
 
 <div align="center">
-
-**DEVELOPER MODE MUST BE ON**
 
 ![Developer Mode](https://img.shields.io/badge/DEVELOPER%20MODE-ENABLE%20ON-16A34A?style=for-the-badge\&logo=googlechrome\&logoColor=white)
 
@@ -223,7 +224,7 @@ A folder selection window will appear.
 3. Select the folder containing `manifest.json`.
 4. Click **Select Folder**.
 
-**Important:** Select the actual extension folder containing `manifest.json`, not the ZIP file or its parent folder.
+> ⚠️ **Important:** Select the actual extension folder containing `manifest.json`, not the ZIP file or its parent folder.
 
 ### ④ Installation Completed!
 
@@ -254,11 +255,9 @@ For convenient access:
 
 <div align="center">
 
-### 🚀 READY TO USE!
+### 🚀 INSTALLATION COMPLETED!
 
-Your extension is installed and ready.
-
-Proceed to the next section to learn how to transfer student data from Excel to the KTU portal.
+Your extension is installed and ready to use.
 
 </div>
 
@@ -266,7 +265,7 @@ Proceed to the next section to learn how to transfer student data from Excel to 
 
 # 📊 How to Use the Extension
 
-## 1. Prepare Your Excel Data
+## STEP 1 — Prepare Your Excel Data
 
 Arrange your student information using the following four-column format:
 
@@ -285,20 +284,35 @@ Arrange your student information using the following four-column format:
 * The extension automatically ignores recognised headers such as University No and Attendance.
 * Ensure that register numbers and marks are correct before copying.
 
-## 2. Copy the Student Records
+## STEP 2 — Copy the Student Records
 
 1. Open your Excel spreadsheet.
 2. Select the four columns containing student information.
 3. Press `Ctrl + C` to copy the selected data.
 
-## 3. Open the KTU Portal
+---
 
-1. Visit the [KTU e-Governance Portal](https://app.ktu.edu.in/).
-2. Log in using your authorised credentials.
-3. Navigate to the appropriate Student Attendance / Internals entry page.
-4. Select the relevant course.
+## STEP 3 — 🔐 Log In to the KTU Portal
 
-## 4. Execute Auto-Fill
+<div align="center">
+
+### AUTHENTICATED FACULTY LOGIN IS REQUIRED
+
+**Use your own authorised KTU faculty credentials before proceeding.**
+
+</div>
+
+1. Visit the official [KTU e-Governance Portal](https://app.ktu.edu.in/).
+2. **Log in using your authorised faculty credentials.**
+3. Ensure that you have successfully logged in to your faculty account.
+4. Navigate to the appropriate **Student Attendance / Internals** entry page.
+5. Select the relevant course for which you want to enter attendance and internal marks.
+
+> 🔒 **Security Reminder:** Use your own authorised KTU faculty login credentials. Never share your username or password with anyone. The extension does not require you to share your login credentials with the developer.
+
+---
+
+## STEP 4 — ⚡ Execute Auto-Fill
 
 1. Click the **KTU Marks & Attendance Auto-Filler** extension icon in your browser toolbar.
 2. Paste the copied Excel data into the extension's text area using `Ctrl + V`.
@@ -307,17 +321,44 @@ Arrange your student information using the following four-column format:
 5. Click **⚡ Auto-Fill Portal Fields**.
 6. Allow the extension to populate the corresponding attendance and internal mark fields.
 
-## 5. Verify Before Submission
+---
 
-After Auto-Fill is completed:
+<div align="center">
 
-* Check the populated attendance percentages.
-* Check the internal marks.
-* Verify the corresponding student records.
-* Check the eligibility status displayed by the KTU portal.
-* Correct any discrepancies manually.
+# 🛑 STEP 5 — MANDATORY VERIFICATION BEFORE SUBMISSION
 
-**Always verify all entries before clicking the final Submit / Save button.**
+## ⚠️ VERIFY EVERY ENTRY BEFORE CLICKING SUBMIT / SAVE
+
+**DO NOT CLICK SUBMIT / SAVE IMMEDIATELY AFTER AUTO-FILL.**
+
+</div>
+
+After the Auto-Fill operation is completed, faculty members **MUST manually verify every student entry on the KTU portal.**
+
+### Verification Checklist
+
+| Check | What to Verify                                                |
+| :---: | ------------------------------------------------------------- |
+|   ☐   | University Register Numbers and corresponding student records |
+|   ☐   | Attendance percentages entered for every student              |
+|   ☐   | Internal / Sessional marks entered for every student          |
+|   ☐   | Eligibility status displayed by the KTU portal                |
+|   ☐   | Missing, incorrect or mismatched entries                      |
+|   ☐   | Total number of students and completed records                |
+
+### 🚨 FINAL SUBMISSION WARNING
+
+<div align="center">
+
+![Verify Before Submit](https://img.shields.io/badge/IMPORTANT-VERIFY%20BEFORE%20SUBMIT-E53935?style=for-the-badge)
+
+### ALWAYS VERIFY ALL ENTRIES BEFORE CLICKING THE FINAL SUBMIT / SAVE BUTTON.
+
+**Only after confirming that ALL student records, attendance percentages, internal marks and eligibility details are correct should you proceed with the final submission.**
+
+</div>
+
+> **Remember:** Auto-Fill assists with data entry. The responsibility for verifying the accuracy of all academic records and submitting them correctly rests with the faculty member.
 
 ---
 
@@ -368,7 +409,7 @@ ktumarksfiller/
 
 ---
 
-## ⚠️ Important Disclaimer & Verification
+## ⚠️ Important Disclaimer
 
 > **MANDATORY MANUAL VERIFICATION**
 >
