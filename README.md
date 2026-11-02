@@ -4,48 +4,52 @@
 
 ### Smart • Secure • Simple Academic Data Entry Automation
 
-A lightweight Chrome extension that automates the transfer of student attendance percentages and internal marks from Excel spreadsheets directly into the official KTU e-Governance portal.
+A lightweight Chrome extension designed to help faculty members transfer student attendance percentages and internal/sessional marks directly from Excel spreadsheets into the official KTU e-Governance portal.
 
 <br>
 
 [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?style=for-the-badge\&logo=googlechrome\&logoColor=white)](https://developer.chrome.com/docs/extensions/)
-[![Manifest V3](https://img.shields.io/badge/Manifest-V3-34A853?style=for-the-badge\&logo=googlechrome\&logoColor=white)](https://developer.chrome.com/docs/extensions/mv3/intro/)
+[![Manifest V3](https://img.shields.io/badge/Manifest-V3-34A853?style=for-the-badge)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![KTU Portal](https://img.shields.io/badge/Portal-KTU-0B7285?style=for-the-badge)](https://app.ktu.edu.in/)
 
 <br>
 
 <a href="https://github.com/aruncx/ktumarksfiller/archive/refs/heads/main.zip">
-  <img src="https://img.shields.io/badge/⬇%20DOWNLOAD%20EXTENSION-Get%20ZIP%20File-16A34A?style=for-the-badge" alt="Download Extension">
+<img src="https://img.shields.io/badge/⬇%20DOWNLOAD%20EXTENSION-GET%20ZIP%20FILE-16A34A?style=for-the-badge&logo=github&logoColor=white" alt="Download Extension">
 </a>
 
 <br><br>
 
-**No Chrome Web Store installation required. Download, extract and load the extension manually.**
+**No Chrome Web Store installation required!**
 
-[Repository](https://github.com/aruncx/ktumarksfiller) · [Report an Issue](https://github.com/aruncx/ktumarksfiller/issues)
+Download the ZIP file, extract it and install using Developer Mode.
+
+[📂 GitHub Repository](https://github.com/aruncx/ktumarksfiller) · [🐛 Report an Issue](https://github.com/aruncx/ktumarksfiller/issues)
 
 </div>
 
 ---
 
-## 🎯 About the Project
+## 📌 About the Project
 
 Entering student attendance percentages and internal marks manually into the KTU portal can be repetitive and time-consuming, particularly when handling large classes.
 
-**KTU Marks & Attendance Auto-Filler** is designed to simplify this process by transferring student data directly from Excel to the corresponding fields in the KTU e-Governance portal.
+**KTU Marks & Attendance Auto-Filler** simplifies this process by transferring student information directly from Excel spreadsheets into the corresponding input fields in the KTU e-Governance portal.
 
 Developed for faculty members of colleges affiliated with **APJ Abdul Kalam Technological University (KTU)**, this tool helps reduce repetitive typing, minimise data-entry errors and improve academic workflow efficiency.
 
-### 💡 Why This Extension?
+### 🎯 Problem & Motivation
 
-| Challenges in Manual Entry          | How This Extension Helps               |
-| ----------------------------------- | -------------------------------------- |
-| ⏳ 20–30 minutes for a course        | ⚡ Transfers data within seconds        |
-| ❌ Risk of typing errors             | 🎯 Automated field population          |
-| 🔄 Different student sorting orders | 🔍 University Register Number matching |
-| 📋 Repetitive copy-and-type work    | 📊 Direct Excel clipboard integration  |
-| ⚠️ Manual eligibility checking      | ✅ Triggers portal validation functions |
+Manual entry of attendance and internal marks involves several challenges:
+
+| Challenge                                      | Solution                               |
+| ---------------------------------------------- | -------------------------------------- |
+| ⏳ 20–30 minutes of repetitive entry per course | ⚡ Automated transfer within seconds    |
+| ❌ Risk of typing errors                        | 🎯 Automated field population          |
+| 🔄 Different student sorting orders            | 🔍 University Register Number matching |
+| 📋 Repeated copy-and-type operations           | 📊 Direct Excel clipboard integration  |
+| ⚠️ Manual eligibility checking                 | ✅ Triggers portal validation functions |
 
 ---
 
@@ -64,10 +68,11 @@ Copy four columns from Excel, paste them into the extension and execute Auto-Fil
 
 ### 🎯 Smart Register Number Matching
 
-Matches students using their University Register Numbers to avoid sorting mismatches.
+Matches students using their University Register Numbers, reducing errors caused by different sorting orders.
 
 </td>
 </tr>
+
 <tr>
 <td width="50%" valign="top">
 
@@ -80,10 +85,11 @@ Uses student names as a secondary matching mechanism when a register number has 
 
 ### ✅ Automatic Portal Validation
 
-Triggers native `input`, `change` and `blur` events to update portal validation functions.
+Triggers native `input`, `change` and `blur` events to update the portal's validation functions.
 
 </td>
 </tr>
+
 <tr>
 <td width="50%" valign="top">
 
@@ -94,7 +100,7 @@ Processes student information locally in the browser without transmitting record
 </td>
 <td width="50%" valign="top">
 
-### 🚀 Simple Interface
+### 🚀 Simple User Interface
 
 A straightforward workflow designed to make repetitive academic data entry easier.
 
@@ -110,42 +116,55 @@ A straightforward workflow designed to make repetitive academic data entry easie
 
 ### Excel → Extension → KTU Portal
 
-|                   STEP 1                   |                STEP 2               |                       STEP 3                       |
-| :----------------------------------------: | :---------------------------------: | :------------------------------------------------: |
-|                     📊                     |                  ⚡                  |                         🎓                         |
-|             **Copy Excel Data**            |          **Run Auto-Fill**          |                **Verify KTU Portal**               |
-| Select and copy the four required columns. | Paste the data and click Auto-Fill. | Check the populated attendance and internal marks. |
+|                   STEP 1                   |                STEP 2               |                       STEP 3                      |
+| :----------------------------------------: | :---------------------------------: | :-----------------------------------------------: |
+|                     📊                     |                  ⚡                  |                         🎓                        |
+|             **Copy Excel Data**            |          **Run Auto-Fill**          |               **Verify KTU Portal**               |
+| Select and copy the four required columns. | Paste the data and click Auto-Fill. | Check attendance, internal marks and eligibility. |
 
 </div>
 
 ---
 
-## 📥 Download & Installation
+# 📥 Download & Installation Guide
 
-### Step 1 — Download the Extension
+## STEP 1 — Download the Extension
 
 <div align="center">
 
+### ⬇️ DOWNLOAD KTU MARKS & ATTENDANCE AUTO-FILLER
+
 <a href="https://github.com/aruncx/ktumarksfiller/archive/refs/heads/main.zip">
-  <img src="https://img.shields.io/badge/⬇%20DOWNLOAD%20NOW-Extension%20ZIP-16A34A?style=for-the-badge&logo=github&logoColor=white" alt="Download Extension ZIP">
+<img src="https://img.shields.io/badge/DOWNLOAD%20EXTENSION-Click%20Here-16A34A?style=for-the-badge&logo=github&logoColor=white" alt="Download Extension ZIP">
 </a>
 
-**Download the latest available source code as a ZIP file.**
+**Download the extension ZIP file directly from GitHub.**
 
 </div>
 
-Alternatively, visit the [GitHub Repository](https://github.com/aruncx/ktumarksfiller), click the green **Code** button and select **Download ZIP**.
+Alternatively:
 
-### Step 2 — Extract the ZIP File
+1. Visit the [KTU Marks & Attendance Auto-Filler GitHub Repository](https://github.com/aruncx/ktumarksfiller).
+2. Click the green **Code** button.
+3. Select **Download ZIP**.
 
-1. Locate the downloaded ZIP file.
-2. Right-click and select **Extract All**.
-3. Open the extracted `ktumarksfiller` folder.
-4. Make sure that `manifest.json` is available inside the folder.
+## STEP 2 — Extract the ZIP File
 
-### Step 3 — Open Browser Extensions
+After downloading:
 
-Open the appropriate extensions page:
+1. Locate the downloaded ZIP file on your computer.
+2. Right-click the file.
+3. Select **Extract All**.
+4. Open the extracted `ktumarksfiller` folder.
+5. Confirm that the folder contains `manifest.json`.
+
+**Important:** Remember the location of this extracted folder. You will need it during installation.
+
+---
+
+## STEP 3 — Open Browser Extensions
+
+Open the extensions management page in your browser.
 
 | Browser           | Extensions Page       |
 | ----------------- | --------------------- |
@@ -153,71 +172,152 @@ Open the appropriate extensions page:
 | 🌐 Microsoft Edge | `edge://extensions`   |
 | 🦁 Brave Browser  | `brave://extensions`  |
 
-### Step 4 — Enable Developer Mode
+You can copy the appropriate address and paste it into your browser's address bar.
 
-1. Open the extensions page.
-2. Enable **Developer mode** using the toggle in the top-right corner.
-3. Click **Load unpacked**.
-4. Select the extracted `ktumarksfiller` folder containing `manifest.json`.
-
-### Step 5 — Pin the Extension
-
-Once installed, locate the extension in your browser toolbar and pin it for convenient access.
+---
 
 <div align="center">
 
-🎉 **Installation Completed!**
+# ⚠️ IMPORTANT INSTALLATION STEP
 
-Your KTU Marks & Attendance Auto-Filler is ready to use.
+## STEP 4 — ENABLE DEVELOPER MODE & LOAD UNPACKED
+
+**This is the MOST IMPORTANT step. Follow these instructions carefully to install the extension successfully.**
+
+</div>
+
+### ① Enable Developer Mode
+
+Once you open the browser's Extensions page:
+
+* Locate the **Developer mode** toggle.
+* It is normally available in the top-right corner.
+* Switch **Developer mode → ON**.
+
+<div align="center">
+
+**DEVELOPER MODE MUST BE ON**
+
+![Developer Mode](https://img.shields.io/badge/DEVELOPER%20MODE-ENABLE%20ON-16A34A?style=for-the-badge\&logo=googlechrome\&logoColor=white)
+
+</div>
+
+### ② Click the Load Unpacked Button
+
+After enabling Developer Mode, additional options will appear on the Extensions page.
+
+Locate and click:
+
+<div align="center">
+
+![Load Unpacked](https://img.shields.io/badge/LOAD%20UNPACKED-CLICK%20HERE-4285F4?style=for-the-badge\&logo=googlechrome\&logoColor=white)
+
+</div>
+
+### ③ Select the Extracted Extension Folder
+
+A folder selection window will appear.
+
+1. Browse to the location where you extracted the downloaded ZIP file.
+2. Open the extracted `ktumarksfiller` folder.
+3. Select the folder containing `manifest.json`.
+4. Click **Select Folder**.
+
+**Important:** Select the actual extension folder containing `manifest.json`, not the ZIP file or its parent folder.
+
+### ④ Installation Completed!
+
+Once the folder is selected, the extension should appear in your browser's installed extensions list.
+
+<div align="center">
+
+![Installed](https://img.shields.io/badge/STATUS-INSTALLED-16A34A?style=for-the-badge\&logo=googlechrome\&logoColor=white)
+
+### 🎉 Congratulations!
+
+**KTU Marks & Attendance Auto-Filler is now successfully installed.**
+
+</div>
+
+> **Remember:** Developer Mode must remain enabled for the manually loaded extension to work. Your browser may display a warning about developer-mode extensions; this is normal for an unpacked extension.
+
+---
+
+## STEP 5 — Pin the Extension to Your Browser Toolbar
+
+For convenient access:
+
+1. Click the **Extensions (🧩)** icon in your browser toolbar.
+2. Locate **KTU Marks & Attendance Auto-Filler**.
+3. Click the Pin icon 📌.
+4. The extension icon will now be visible in your browser toolbar.
+
+<div align="center">
+
+### 🚀 READY TO USE!
+
+Your extension is installed and ready.
+
+Proceed to the next section to learn how to transfer student data from Excel to the KTU portal.
 
 </div>
 
 ---
 
-## 📊 How to Use
+# 📊 How to Use the Extension
 
-### 1. Prepare Your Excel Data
+## 1. Prepare Your Excel Data
 
-Arrange your student information in the following four-column format:
+Arrange your student information using the following four-column format:
 
-| University Register Number | Student Name     | Attendance % | Internal Mark |
-| :------------------------- | :--------------- | :----------: | :-----------: |
-| `VAS24EE002`               | ABHIJITH JAYARAJ |      95      |       49      |
-| `VAS24EE003`               | ABHINAV P V      |      92      |       48      |
-| `VAS24EE004`               | ABIRAM M J       |      65      |       31      |
-| `VAS24EE005`               | ADHARSH P P      |      92      |       53      |
+| Column 1: University Register Number | Column 2: Student Name | Column 3: Attendance % | Column 4: Internal Mark |
+| ------------------------------------ | ---------------------- | :--------------------: | :---------------------: |
+| `VAS24EE002`                         | ABHIJITH JAYARAJ       |           95           |            49           |
+| `VAS24EE003`                         | ABHINAV P V            |           92           |            48           |
+| `VAS24EE004`                         | ABIRAM M J             |           65           |            31           |
+| `VAS24EE005`                         | ADHARSH P P            |           92           |            53           |
 
-**Important:**
+### Excel Data Guidelines
 
 * Maintain the specified four-column order.
+* Select all the required student records.
 * You can copy the data with or without the header row.
 * The extension automatically ignores recognised headers such as University No and Attendance.
+* Ensure that register numbers and marks are correct before copying.
 
-### 2. Copy the Student Records
+## 2. Copy the Student Records
 
 1. Open your Excel spreadsheet.
-2. Select the four columns containing the student records.
+2. Select the four columns containing student information.
 3. Press `Ctrl + C` to copy the selected data.
 
-### 3. Open the KTU Portal
+## 3. Open the KTU Portal
 
-1. Log in to the [KTU e-Governance Portal](https://app.ktu.edu.in/).
-2. Navigate to the appropriate Student Attendance / Internals entry page.
-3. Select the relevant course.
+1. Visit the [KTU e-Governance Portal](https://app.ktu.edu.in/).
+2. Log in using your authorised credentials.
+3. Navigate to the appropriate Student Attendance / Internals entry page.
+4. Select the relevant course.
 
-### 4. Execute Auto-Fill
+## 4. Execute Auto-Fill
 
-1. Click the KTU Marks & Attendance Auto-Filler extension icon.
-2. Paste the copied Excel data using `Ctrl + V`.
+1. Click the **KTU Marks & Attendance Auto-Filler** extension icon in your browser toolbar.
+2. Paste the copied Excel data into the extension's text area using `Ctrl + V`.
 3. Check the student count displayed in the preview.
-4. Click **⚡ Auto-Fill Portal Fields**.
-5. Allow the extension to populate the corresponding portal fields.
+4. Confirm that the number of records is correct.
+5. Click **⚡ Auto-Fill Portal Fields**.
+6. Allow the extension to populate the corresponding attendance and internal mark fields.
 
-### 5. Verify Before Submission
+## 5. Verify Before Submission
 
-Check the attendance percentages, internal marks and eligibility status displayed on the portal.
+After Auto-Fill is completed:
 
-**Always perform a manual verification before clicking Submit or Save.**
+* Check the populated attendance percentages.
+* Check the internal marks.
+* Verify the corresponding student records.
+* Check the eligibility status displayed by the KTU portal.
+* Correct any discrepancies manually.
+
+**Always verify all entries before clicking the final Submit / Save button.**
 
 ---
 
@@ -225,14 +325,16 @@ Check the attendance percentages, internal marks and eligibility status displaye
 
 Student academic information requires careful handling.
 
-The extension is designed with a privacy-focused, client-side approach.
+The extension follows a privacy-focused, client-side approach.
 
-* 🔒 All processing takes place within your local browser session.
-* 🚫 Student records are not transmitted to an external server.
-* 🚫 No student data or portal credentials are sent to the developer.
-* 💻 The extension works with the data supplied by the user.
+| Privacy Feature              | Description                                                            |
+| ---------------------------- | ---------------------------------------------------------------------- |
+| 🔒 Local Processing          | Student information is processed within the local browser workflow.    |
+| 🚫 No External Data Transfer | The extension does not transmit student records to an external server. |
+| 🔑 Credential Privacy        | Portal credentials are not sent to the developer.                      |
+| 💻 Browser-Based Operation   | The extension works with the data supplied by the faculty member.      |
 
-**Your data stays within your local browser workflow.**
+**Your student data stays within your local browser workflow.**
 
 ---
 
@@ -266,7 +368,7 @@ ktumarksfiller/
 
 ---
 
-## ⚠️ Important Disclaimer
+## ⚠️ Important Disclaimer & Verification
 
 > **MANDATORY MANUAL VERIFICATION**
 >
@@ -274,7 +376,7 @@ ktumarksfiller/
 >
 > The KTU e-Governance portal may undergo changes to its interface, HTML structure or validation scripts. Such changes may affect the functionality of this extension.
 >
-> Faculty members are responsible for manually verifying all populated attendance percentages, internal marks and eligibility details before clicking the final Submit / Save button.
+> Faculty members are responsible for manually verifying all populated attendance percentages, internal marks and eligibility details on their screen before clicking the final Submit / Save button.
 >
 > The developer assumes no responsibility or liability for data-entry discrepancies, submission errors or academic consequences arising from the use of this extension.
 
@@ -286,13 +388,17 @@ ktumarksfiller/
 
 ### Developed with ❤️ for the KTU Faculty Community
 
-**Arun Xavier**
+# Arun Xavier
 
-Assistant Professor
+**Assistant Professor**
+
 Department of Electrical & Electronics Engineering (EEE)
 
 **Vidya Academy of Science & Technology**
+
 Thrissur, Kerala, India
+
+<br>
 
 [![GitHub](https://img.shields.io/badge/GitHub-@aruncx-181717?style=for-the-badge\&logo=github)](https://github.com/aruncx)
 
@@ -302,20 +408,28 @@ Thrissur, Kerala, India
 
 ## 📄 License
 
-This project is distributed under the **MIT License**.
+This project is open-source and distributed under the **MIT License**.
 
 See the [LICENSE](LICENSE) file for details.
 
 ---
 
+## ⭐ Support the Project
+
+If you find this extension useful in your academic work:
+
+* ⭐ Give the GitHub repository a star.
+* 📢 Share it with fellow KTU faculty members.
+* 💡 Suggest improvements or report issues through GitHub.
+
 <div align="center">
-
-### ⚡ Less Manual Work. More Academic Productivity.
-
-If you find this extension useful, consider giving the repository a ⭐ on GitHub.
 
 [![GitHub Stars](https://img.shields.io/github/stars/aruncx/ktumarksfiller?style=social)](https://github.com/aruncx/ktumarksfiller)
 
+### ⚡ Less Manual Work. More Academic Productivity.
+
 **Thank you for supporting open-source academic automation!**
+
+[⬇️ Download Extension](https://github.com/aruncx/ktumarksfiller/archive/refs/heads/main.zip) · [📂 View GitHub Repository](https://github.com/aruncx/ktumarksfiller)
 
 </div>
