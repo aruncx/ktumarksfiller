@@ -73,14 +73,6 @@ Matches students using their University Register Numbers, reducing errors caused
 </td>
 </tr>
 
-<tr>
-<td width="50%" valign="top">
-
-### 🔎 Fallback Name Matching
-
-Uses student names as a secondary matching mechanism when a register number has a character discrepancy.
-
-</td>
 <td width="50%" valign="top">
 
 ### ✅ Automatic Portal Validation
