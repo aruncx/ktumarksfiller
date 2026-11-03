@@ -82,17 +82,12 @@ Triggers native `input`, `change` and `blur` events to update the portal's valid
 * `checkEligibility`
 
 </td>
-</tr>
 
-<tr>
 <td width="50%" valign="top">
 
 ### 🔒 Privacy-Focused Operation
 
 Processes student information locally in the browser without transmitting records to an external server.
-
-</td>
-<td width="50%" valign="top">
 
 ### 🚀 Simple User Interface
 
