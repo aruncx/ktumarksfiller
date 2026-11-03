@@ -71,8 +71,7 @@ Copy four columns from Excel, paste them into the extension and execute Auto-Fil
 Matches students using their University Register Numbers, reducing errors caused by different sorting orders.
 
 </td>
-</tr>
-
+<tr>
 <td width="50%" valign="top">
 
 ### ✅ Automatic Portal Validation
